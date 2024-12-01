@@ -7,8 +7,8 @@ O projeto utilizou HTML, CSS e JavaScript.
 Todo código de JavaScript está na seção "Objetivo", onde é possivel testar algumas das funcionalidades do projeto.
 
 # Equipe:
-Arthur Gomes - RM 560771
-Matheus Siroma - RM 560248 
-Pedro Estevam - RM 560642
-Lucas Villar - RM 560005
-Luiz Gustavo - RM 560110
+Arthur Gomes - RM 560771 <br>
+Matheus Siroma - RM 560248 <br>
+Pedro Estevam - RM 560642 <br>
+Lucas Villar - RM 560005 <br>
+Luiz Gustavo - RM 560110 <br>
