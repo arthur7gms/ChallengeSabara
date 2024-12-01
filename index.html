@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ERP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/smartphone 1.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo" id="home">
+            <a href="#home"><img src="images/Logo.png" alt="Logo do Projeto"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#problemas">Problemas</a></li>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#totem">Totem de Autoatendimento</a></li>
+                <li><a href="#publico">Público Alvo</a></li>
+                <li><a href="#impactos">Impactos</a></li>
+                <li><a href="#aplicacao">Aplicação</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+            <div class="apresentacao">
+                <div class="textos">
+                    <div class="nome">
+                        <h1>SISTEMA ERP</h1>
+                        <p>Sua vida em um único lugar.</p>
+                    </div>
+                    <div class="falas">
+                        <p>Gerencie todas suas obrigações, atividades e necessidades em um único lugar.</p>
+                        <p>Facilite e torne a sua vida mais simples, quer dizer, nós fazemos isso pra você.<p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="images/Imagem da Direita.png" alt="Simulação do Sistema">
+                </div>
+            </div>
+        </div>
+        <div class="problems">
+            <p class="sub-titulo" id="problemas">Problemas</p>
+            <div class="problems-content">
+                <div class="superior">
+                    <div class="problemas-text">
+                        <div class="problems-text1">
+                            <p>Hoje no Brasil diversos hospitais e clinicas reclamam de um problema que está presente em todo lugar, a <strong>desorganização</strong>.</p>
+                        </div>
+                        <div class="problems-text2">
+                            <p>A desorganização causa muitas confusões e estresse em diversos lugares, inclusive em hospitais. Em hospitais a desorganização é um tema muito constante, sendo citado inúmeras vezes por pacientes direcionando reclamações para diversas areas dos hospitais, como:</p>
+                        </div>
+                    </div>
+                    <div class="problemas-img">
+                        <img src="images/teste-de-stress.png" alt="Pessoa Estressada">
+                    </div>
+                </div>
+                <div class="inferior">
+                    <div class="cards">
+                        <div class="farmacia">
+                            <h2>Farmácia</h2>
+                            <p>Diversos medicamentos
+                                são perdidos devido a
+                                data de valdidade que 
+                                não é  monitorada da 
+                                melhor forma,causando 
+                                um imenso prejuízo aos 
+                                hospitais.</p>
+                            <img src="images/farmacia.png" alt="Ícone de calendário">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="agendamento">
+                            <h2>Central de Agendamento</h2>
+                            <p>Pacientes enfrentam dificuldades para marcar consultas e exames devido à desorganização, resultando em atrasos nos atendimentos e aumento do estresse.</p>
+                            <img src="images/vencimento.png" alt="Ícone de pedido">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="estoque">
+                            <h2>Controle de Estoque</h2>
+                            <p>A falta de controle adequado causa perdas de insumos por vencimento, além de gerar falta de materiais essenciais e desperdício de recursos.</p>
+                            <img src="images/armazem.png" alt="Ícone de vencimento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="objetivo" id="objetivo">
+            <p class="sub-titulo">Objetivo</p>
+            <div class="objetivo-content">
+                <div class="objetivo-text">
+                    <div class="objetivo-topic">
+                        <p>Temos como objetivo simplificar e centralizar a gestão de processos hospitalares como:</p>
+                    </div>
+                    <div class="objetivo-topic">
+                        <ul>
+                            <li>Controle de estoque.</li>
+                            <li>Agendamentos médicos.</li>
+                            <li>Controle de validade de medicamentos.</li>
+                        </ul>
+                    </div>
+                    <div class="objetivo-topic">
+                        <p>Esse sistema visa integrar diferentes departamentos e facilitar a tomada de decisões, melhorando a eficiência operacional do hospital.</p>
+                    </div>
+                </div>
+                <div class="objetivo-image">
+                    <h4>Clique para Testar as Funcionalidades</h4>
+                    <div class="cima">
+                        <div class="image-objetivoG">
+                            <button onclick="medicamento()">
+                                <div class="image-objetivo"><img src="images/pedido-farmacia.png" alt="Pedido para Farmacia"></div>
+                            </button>
+                            <p>Pedir Medicamento</p>
+                        </div>
+                        <div class="image-objetivoG">
+                            <button onclick="agendamento()">
+                                <div class="image-objetivo"><img src="images/agendamento-on-line.png" alt="Agendamento Médico"></div>
+                            </button>
+                            <p>Agendamento Médico</p>
+                        </div>
+                    </div>
+                    <div class="baixo">
+                        <div class="image-objetivoG">
+                            <button onclick="estoque()">
+                                <div class="image-objetivo"><img src="images/inspecao.png" alt=""></div>
+                            </button>
+                            <p>Verificar Estoque</p>
+                        </div>
+                    </div>
+                    <span id="estoque"></span>
+                </div>
+            </div>
+        </div>
+        <div class="totem" id="totem">
+            <p class="sub-titulo">Totem de Autoatendimento</p>
+            <div class="totem-content">
+                <div class="totem-text">
+                    <p>O sistema terá tambem a parte do paciente, onde o mesmo podera executar processos sozinho, sem depender de um auxilio de algum funcionario do hospital, tornando a visita mais rápida, veja algumas das funcionaldades:</p>
+                </div>
+                <div class="totem-topic">
+                    <div class="info-totem">
+                        <div class="totem-back">
+                            <div class="image-back">
+                                <h4>Agendamento</h4>
+                                <img src="images/agendamento.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-back">
+                            <p>Sistema capaz de marcar consultas, exames e cirurgias. Tudo de forma simples, dando possibilidadede de o proprio paciente realizar essa tarefa quando chegar ao hospital, sem precisar pegar filas. O sistema é integrado com o ERP, para organizar todos agendamentos em um único lugar.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-totem">
+                        <div class="totem-back">
+                            <div class="image-back">
+                                <h4>Retirada de Exame</h4>
+                                <img src="images/exame_medico.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-back">
+                            <p>O totem de autoatendimento permite que pacientes retirem seus laudos médicos de forma rápida e prática. Basta se identificar com seu CPF, visualizar o laudo e até mesmo imagens e imprimir na hora. Simples, seguro e sem filas!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-totem">
+                        <div class="totem-back">
+                            <div class="image-back">
+                                <h4>Localização Interna</h4>
+                                <img src="images/mapa.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-back">
+                            <p>Um mapa inteligente e interativo é disponibilizado para paciente. O mapa é capaz de mostrar o caminho para locais especificios, como salas, quartos ou setores. Dessa forma o mesmo consegue se locomover melhor durante sua visita ao hospital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="publico-alvo" id="publico">
+            <p class="sub-titulo">Público Alvo</p>
+            <div class="public-content">
+                <div class="container">
+                    <div class="grid">
+                        <div class="item">
+                            <img src="images/img1.png" alt="Laboratórios de exames">
+                            <p class="text-P_A">Laboratórios de exames</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/img4.png" alt="Hospitais">
+                            <p class="text-P_A">Hospitais</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/img3.png" alt="Clínicas médicas">
+                            <p class="text-P_A">Clínicas médicas</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/img2.png" alt="Centros cirúrgicos">
+                            <p class="text-P_A">Centros cirúrgicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="impactos" id="impactos">
+            <p class="sub-titulo">Impactos Positivos e Negativos</p>
+            <div class="impactos-content">
+                <div class="positivo">
+                    <div class="impactos-text">
+                        <h4>Positivos:</h4>
+                        <ul>
+                            <li>Redução de erros humanos em processos manuais.</li>
+                            <li>Otimização do tempo na gestão de estoques e agendamentos.</li>
+                            <li>Melhor controle sobre a validade de insumos, reduzindo perdas.</li>
+                            <li>Centralização das informações, promovendo maior transparência e eficiência.</li>
+                        </ul>
+                    </div>
+                    <div class="positivo-img">
+                        <img src="images/positivo.png" alt="Sinal de Positivo">
+                    </div>
+                </div>
+                <div class="negativo">
+                    <div class="negativo-img">
+                        <img src="images/negativo.png" alt="Sinal de Negativo">
+                    </div>
+                    <div class="impactos-text">
+                        <h4>Negativo:</h4>
+                        <ul>
+                            <li>Custo inicial elevado para implementação.</li>
+                            <li>Necessidade de treinamento da equipe para uso do sistema.</li>
+                            <li>Dependência de tecnologia, podendo gerar transtornos em caso de falhas no sistema ou internet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p id="explicacao">Toda a ideia tem como objetivo principal agilizar o tempo de visita dos pacientes em hospitais, clinicas ou qualquer ambiente da saúde e o auxiliar a organização interna dessas instituições tornando um ambiente mais simples de trabalhar, e tambem auxiliar com gastos e compras desses locais.</p>
+        </div>
+        <div class="aplicacao" id="aplicacao">
+            <p class="sub-titulo">Aplicação</p>
+            <div class="aplicacao-content">
+                <div class="container">
+                    <div class="text-section">
+                        <p class="text_APK">O sistema seria instalado em servidores locais ou na nuvem para que possa ser acessado por diferentes setores do hospital. 
+                        Equipamentos como computadores e tablets seriam utilizados para alimentar e consultar dados no sistema. 
+                        Integração com sistemas já existentes no hospital, como software de contabilidade ou gestão financeira, caso aplicável.</p>
+                    </div>
+                    <div class="image-section">
+                        <div class="image-item">
+                            <img src="images/totem.png" alt="Totem de Autoatendimento" class="img_APK">
+                            <p class="text_APK_img">Totem de Autoatendimento</p>
+                        </div>
+                        <div class="image-item">
+                            <img src="images/dados.png" alt="Sistema de Armazenamento de Dados" class="img_APK">
+                            <p class="text_APK_img">Sistema de Armazenamento de Dados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<script src="js/main.js"></script>
+</body>
+</html>

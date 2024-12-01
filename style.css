@@ -1,0 +1,461 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto Light";
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins-Medium.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    padding: 20px;
+}
+.sub-titulo{
+    font-family: "Poppins";
+    color: gray;
+    padding: 20px;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    font-family: "Poppins";
+    gap: 20px;
+    padding: 0px 20px 0px 0px;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+nav ul a:hover{
+    text-decoration: underline;
+}
+.home{
+    height: calc(100vh - 122px);
+    background-color: #f8fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.problems{
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.objetivo{
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.totem{
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.publico-alvo{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.impactos{
+    background-color: #f8fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.aplicacao{
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.apresentacao h1{
+    font-family: "Roboto";
+    font-size: 5em;
+}
+.nome p{
+    font-family: "Roboto Light";
+    font-size: 1.4em;
+    padding: 0px 0px 0px 10px;
+}
+.image{
+    padding: 0px 50px;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.falas{
+    font-family: "Roboto Light";
+    width: 700px;
+    font-size: 1.4em;
+    padding: 0px 0px 50px;
+}
+.problems-content{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+.superior{
+    display: flex;
+    justify-content: space-between;
+}
+.problemas-text{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "Roboto Light";
+    width: 1105px;
+    font-size: 30px;
+    justify-content: center;
+}
+.problemas-img{
+    padding-bottom: 20px;
+}
+.inferior {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.cards{
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards:hover {
+    transform: translateY(-10px); /* Efeito ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.cards h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Poppins";
+}
+.cards p {
+    font-size: 0.95em;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+.cards img {
+    width: 50%; /* Ajuste de tamanho das imagens */
+    height: auto; /* Mantém a proporção */
+    margin-top: 20px;
+}
+.farmacia{
+    background-color: #2EA6FF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 420px;
+    height: 420px;
+}
+.agendamento{
+    background-color: #0066B1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 420px;
+    height: 420px;
+}
+.agendamento img{
+    margin: 0px;
+}
+.estoque{
+    background-color: #0066B1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 420px;
+    height: 420px;
+}
+.objetivo-content{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.objetivo-text{
+    font-family: "Roboto Light";
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 945px;
+}
+.objetivo-content ul{
+    font-weight: bold;
+    list-style: none;
+    padding: 0px 0px 0px 20px;
+}
+.objetivo-text li{
+    padding: 8px;
+    font-family: "Roboto";
+}
+.objetivo-image{
+    background-color: #0066B1;
+    height: 600px;
+    border-radius: 20px;
+}
+.totem-content{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.totem-text{
+    font-family: "Roboto Light";
+    font-size: 28px;
+}
+.image-back{
+    background-color: #f1f5f9;
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.totem-topic{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    align-items: center;
+    gap: 50px;
+}
+.image-back img{
+    width: 190px;
+    height: 190px;
+}
+.image-back h4{
+    font-family: "Roboto";
+    font-size: 20px;
+    padding-top: 10px;
+}
+.info-totem{
+    font-family: "Poppins";
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 900px;
+    gap: 50px;
+}
+.impactos-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 150px 20px 150px;
+    gap: 50px;
+}
+.positivo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.impactos-text h4{
+    font-family: "Roboto";
+    font-size: 35px;
+    color: black;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+.impactos-text ul{
+    padding: 0px 50px ;
+    list-style: none;
+}
+.impactos-text li{
+    padding: 3px;
+    color: black;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+.negativo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: right;
+    justify-content: space-around;
+}
+
+/*STYLE PUBLICO_ALVO*/
+
+.container {
+    text-align: center;
+}
+
+
+
+.grid {
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.item img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.text-P_A{
+    font-family: "Poppins";
+    font-size: 30px;
+    padding: 0px 0px 50px;
+}
+
+
+/*STYLE APK_TEC*/
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.text-section {
+    flex: 1;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.text-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image-item img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 0.5rem;
+}
+
+.image-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.text_APK{
+    justify-content: center;
+    width: 400px;
+    padding-left: 200px;
+    color: black;
+    font-family: "Poppins";
+    font-size: 25px;
+}
+
+.text_APK_img{
+    font-family: "Poppins";
+    font-size: 15px;
+    color: gray;
+    padding-right: 100px;
+}
+
+.img_APK{
+    width: 300px;
+    height: 300px;
+    padding-right: 100px;
+}
+
+.image-objetivo img{
+    width: 200px;
+    height: 200px;
+}
+.objetivo-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+.cima{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.image-objetivoG{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-objetivoG p{
+    font-family: "Poppins";
+}
+.objetivo-image h4{
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.baixo{
+    padding-bottom: 2px;
+}
+.objetivo-image span{
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 18px;
+}
+#explicacao{
+    font-family: "Roboto Light";
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
